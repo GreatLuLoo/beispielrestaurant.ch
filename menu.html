@@ -2,37 +2,171 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Menü – Bella Italia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menü – Ristorante Bella Italia</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<header>
+  <h1>Unser Menü</h1>
+</header>
 
 <nav>
   <ul>
     <li><a href="index.html">Start</a></li>
     <li><a href="ueber-uns.html">Über uns</a></li>
-    <li><a href="menu.html">Menü</a></li>
+    <li><a href="menu.html" class="active">Menü</a></li>
     <li><a href="kontakt.html">Kontakt</a></li>
     <li><a href="reservieren.html">Reservieren</a></li>
   </ul>
 </nav>
 
 <section>
-  <h2>Unser Menü</h2>
 
+  <!-- GETRÄNKE -->
+  <h2>Getränke</h2>
   <div class="menu">
     <div class="menu-item">
-      <h3>Pizza Margherita</h3>
-      <p>Tomate, Mozzarella, Basilikum</p>
-      <strong>8,50 €</strong>
+      <h3>Mineralwasser 0,5l</h3>
+      <p>Still oder sprudelnd</p>
+      <strong>3,00 €</strong>
     </div>
+    <div class="menu-item">
+      <h3>Mineralwasser 1,0l</h3>
+      <p>Still oder sprudelnd</p>
+      <strong>5,50 €</strong>
+    </div>
+    <div class="menu-item">
+      <h3>Hauswein Rot / Weiß 0,2l</h3>
+      <p>Italienischer Qualitätswein</p>
+      <strong>4,50 €</strong>
+    </div>
+    <div class="menu-item">
+      <h3>Bier 0,33l</h3>
+      <p>Helles oder Pils</p>
+      <strong>3,50 €</strong>
+    </div>
+  </div>
 
+  <!-- KAFFEE -->
+  <h2>Kaffee & Heißgetränke</h2>
+  <div class="menu">
+    <div class="menu-item">
+      <h3>Espresso</h3>
+      <strong>2,50 €</strong>
+    </div>
+    <div class="menu-item">
+      <h3>Cappuccino</h3>
+      <strong>3,00 €</strong>
+    </div>
+    <div class="menu-item">
+      <h3>Latte Macchiato</h3>
+      <strong>3,50 €</strong>
+    </div>
+    <div class="menu-item">
+      <h3>Heiße Schokolade</h3>
+      <strong>3,50 €</strong>
+    </div>
+  </div>
+
+  <!-- VORSPEISEN -->
+  <h2>Vorspeisen (Antipasti)</h2>
+  <div class="menu">
+    <div class="menu-item">
+      <h3>Bruschetta</h3>
+      <p>Tomaten, Knoblauch, Basilikum</p>
+      <strong>5,50 €</strong>
+    </div>
+    <div class="menu-item">
+      <h3>Mozzarella Caprese</h3>
+      <p>Mozzarella, Tomaten, Basilikum</p>
+      <strong>7,50 €</strong>
+    </div>
+    <div class="menu-item">
+      <h3>Carpaccio di Manzo</h3>
+      <p>Rinderfilet, Rucola, Parmesan</p>
+      <strong>9,50 €</strong>
+    </div>
+  </div>
+
+  <!-- SALATE -->
+  <h2>Salate</h2>
+  <div class="menu">
+    <div class="menu-item">
+      <h3>Insalata Mista</h3>
+      <p>Gemischter Salat mit Vinaigrette</p>
+      <strong>5,00 €</strong>
+    </div>
+    <div class="menu-item">
+      <h3>Insalata di Mare</h3>
+      <p>Meeresfrüchte, Olivenöl</p>
+      <strong>12,00 €</strong>
+    </div>
+  </div>
+
+  <!-- HAUPTGÄNGE -->
+  <h2>Hauptgänge</h2>
+  <div class="menu">
     <div class="menu-item">
       <h3>Spaghetti Carbonara</h3>
       <p>Ei, Pecorino, Guanciale</p>
       <strong>11,00 €</strong>
     </div>
+    <div class="menu-item">
+      <h3>Lasagne al Forno</h3>
+      <p>Rindfleisch, Tomatensauce, Béchamel</p>
+      <strong>12,50 €</strong>
+    </div>
+    <div class="menu-item">
+      <h3>Risotto ai Funghi</h3>
+      <p>Cremiges Pilzrisotto</p>
+      <strong>13,00 €</strong>
+    </div>
+    <div class="menu-item">
+      <h3>Saltimbocca alla Romana</h3>
+      <p>Kalb, Prosciutto, Salbei</p>
+      <strong>18,00 €</strong>
+    </div>
   </div>
+
+  <!-- PIZZA -->
+  <h2>Pizza</h2>
+  <div class="menu">
+    <div class="menu-item">
+      <h3>Margherita</h3>
+      <p>Tomate, Mozzarella, Basilikum</p>
+      <strong>8,50 €</strong>
+    </div>
+    <div class="menu-item">
+      <h3>Diavola</h3>
+      <p>Salami, Chili, Mozzarella</p>
+      <strong>10,50 €</strong>
+    </div>
+    <div class="menu-item">
+      <h3>Quattro Formaggi</h3>
+      <p>Vier Käsesorten</p>
+      <strong>11,50 €</strong>
+    </div>
+  </div>
+
+  <!-- DESSERTS -->
+  <h2>Desserts (Dolci)</h2>
+  <div class="menu">
+    <div class="menu-item">
+      <h3>Tiramisu</h3>
+      <strong>6,50 €</strong>
+    </div>
+    <div class="menu-item">
+      <h3>Panna Cotta</h3>
+      <strong>6,00 €</strong>
+    </div>
+    <div class="menu-item">
+      <h3>Gelato (2 Kugeln)</h3>
+      <strong>4,50 €</strong>
+    </div>
+  </div>
+
 </section>
 
 <footer>
