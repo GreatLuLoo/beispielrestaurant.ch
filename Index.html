@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ristorante Bella Italia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fafafa;
+      color: #333;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1528605248644-14dd04022da1') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    nav {
+      background-color: #8b0000;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      margin: 0 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #8b0000;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .menu-item {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .menu-item h3 {
+      margin-top: 0;
+    }
+    .contact {
+      text-align: center;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ristorante Bella Italia</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">Über uns</a></li>
+      <li><a href="#menu">Menü</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>Über uns</h2>
+    <p>
+      Willkommen im <strong>Ristorante Bella Italia</strong>! Wir bringen den echten Geschmack Italiens
+      direkt auf Ihren Teller. Unsere Gerichte werden mit frischen Zutaten und viel Liebe zubereitet –
+      wie bei Nonna zu Hause.
+    </p>
+  </section>
+
+  <section id="menu">
+    <h2>Unser Menü</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <h3>Pizza Margherita</h3>
+        <p>Tomatensauce, Mozzarella, frisches Basilikum</p>
+        <strong>8,50 €</strong>
+      </div>
+      <div class="menu-item">
+        <h3>Spaghetti Carbonara</h3>
+        <p>Ei, Pecorino, Guanciale, schwarzer Pfeffer</p>
+        <strong>11,00 €</strong>
+      </div>
+      <div class="menu-item">
+        <h3>Lasagne al Forno</h3>
+        <p>Rindfleisch, Tomatensauce, Béchamel</p>
+        <strong>12,50 €</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <div class="contact">
+      <p><strong>Adresse:</strong> Musterstraße 12, 12345 Berlin</p>
+      <p><strong>Telefon:</strong> +49 123 456789</p>
+      <p><strong>E-Mail:</strong> info@bellaitalia.de</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Ristorante Bella Italia</p>
+  </footer>
+
+</body>
+</html>
