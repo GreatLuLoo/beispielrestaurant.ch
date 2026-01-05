@@ -5,22 +5,30 @@ body {
   color: #333;
 }
 
+/* STANDARD HEADER (für andere Seiten, falls genutzt) */
 header {
-  background: url('https://images.unsplash.com/photo-1528605248644-14dd04022da1') center/cover no-repeat;
+  background-color: #333;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+/* STARTSEITE – EIGENES BILD */
+.home-header {
+  background: url("https://images.unsplash.com/photo-1540189549336-e6e99c3679fe") center/cover no-repeat;
   height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  text-align: center;
 }
 
-header h1 {
+.home-header h1 {
   font-size: 3rem;
   background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 20px 30px;
   border-radius: 10px;
 }
+
 
 nav {
   background-color: #8b0000;
