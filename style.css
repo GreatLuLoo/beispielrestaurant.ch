@@ -5,89 +5,24 @@
   box-sizing: border-box;
 }
 
+/* BASIS */
 body {
   font-family: "Segoe UI", sans-serif;
-  color: #222;
   background: #f7f7f7;
+  color: #222;
 }
 
-/* NAVIGATION */
-.nav-overlay {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  z-index: 10;
-}
-
-.nav-overlay ul {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  list-style: none;
-}
-
-.nav-overlay a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  letter-spacing: 1px;
-  padding-bottom: 4px;
-  border-bottom: 2px solid transparent;
-}
-
-.nav-overlay a:hover,
-.nav-overlay a.active {
-  border-color: white;
-}
-
-/* HERO */
-.hero {
-  height: 100vh;
-  background: linear-gradient(
-      rgba(0,0,0,0.45),
-      rgba(0,0,0,0.45)
-    ),
-    url("assets/hero.jpg") center / cover no-repeat;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-text {
-  text-align: center;
-  color: white;
-}
-
-.hero-text h1 {
-  font-size: 4rem;
-  letter-spacing: 3px;
-}
-
-.hero-text p {
-  margin-top: 15px;
-  font-size: 1.2rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-/* SEITENLAYOUT */
-header {
-  background: #8b0000;
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
-}
-
+/* NAVIGATION – überall gleich */
 nav {
   background: white;
-  padding: 15px;
+  padding: 18px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 nav ul {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 30px;
   list-style: none;
 }
 
@@ -95,29 +30,102 @@ nav a {
   text-decoration: none;
   color: #222;
   font-weight: 500;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
 }
 
+nav a:hover,
 nav a.active {
   color: #8b0000;
-  border-bottom: 2px solid #8b0000;
+  border-color: #8b0000;
 }
 
+/* HERO STARTSEITE */
+.hero-home {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("assets/start.jpg") center / cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-home h1 {
+  color: white;
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+
+/* HERO UNTERSEITEN */
+.hero-page {
+  background: #8b0000;
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.hero-page h1 {
+  font-size: 2.8rem;
+}
+
+/* CONTENT */
 section {
   max-width: 1000px;
-  margin: 60px auto;
+  margin: 70px auto;
   padding: 0 20px;
 }
 
 h2 {
-  margin-bottom: 30px;
-  color: #8b0000;
   text-align: center;
+  color: #8b0000;
+  margin-bottom: 40px;
 }
 
+/* TEAM */
+.team {
+  display: grid;
+  gap: 25px;
+}
+
+.team-member {
+  display: flex;
+  gap: 25px;
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.team-member img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #8b0000;
+}
+
+.team-member h3 {
+  color: #8b0000;
+  margin-bottom: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .team-member {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* FOOTER */
 footer {
   background: #222;
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 60px;
+  padding: 25px;
 }
+
