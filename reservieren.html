@@ -2,7 +2,8 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Reservieren – Bella Italia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservieren – Ristorante Bella Italia</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,30 +14,80 @@
     <li><a href="ueber-uns.html">Über uns</a></li>
     <li><a href="menu.html">Menü</a></li>
     <li><a href="kontakt.html">Kontakt</a></li>
-    <li><a href="reservieren.html">Reservieren</a></li>
+    <li><a href="reservieren.html" class="active">Reservieren</a></li>
   </ul>
 </nav>
 
-<section>
-  <h2>Tisch reservieren</h2>
+<header class="hero-page">
+  <h1>Tisch reservieren</h1>
+</header>
 
-  <form>
-    <p>
-      <input type="text" placeholder="Name" required>
-    </p>
-    <p>
-      <input type="email" placeholder="E-Mail" required>
-    </p>
-    <p>
-      <input type="date" required>
-    </p>
-    <p>
-      <input type="time" required>
-    </p>
-    <p>
-      <button type="submit">Reservieren</button>
-    </p>
+<section>
+
+  <h2>Reservierungsanfrage</h2>
+
+  <form class="reservation-form">
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Ihr Name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">E-Mail</label>
+      <input type="email" id="email" placeholder="Ihre E-Mail" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Telefon</label>
+      <input type="tel" id="phone" placeholder="Ihre Telefonnummer">
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="date">Datum</label>
+        <input type="date" id="date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="time">Uhrzeit</label>
+        <input type="time" id="time" required>
+      </div>
+
+      <div class="form-group">
+        <label for="persons">Personen</label>
+        <select id="persons">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6+</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Nachricht</label>
+      <textarea id="message" rows="4" placeholder="Besondere Wünsche..."></textarea>
+    </div>
+
+    <button type="submit">Reservierung anfragen</button>
+
   </form>
+
+</section>
+
+<section>
+  <h2>So finden Sie uns</h2>
+
+  <div class="map">
+    <iframe 
+      src="https://www.google.com/maps?q=Rome,Italy&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
 </section>
 
 <footer>
