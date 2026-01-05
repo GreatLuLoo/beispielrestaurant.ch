@@ -1,85 +1,123 @@
-body {
-
-
-section h2 {
-text-align: center;
-margin-bottom: 30px;
-color: #8b0000;
-}
-
-
-.menu {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 20px;
-}
-
-
-.menu-item {
-background: white;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-.menu-item h3 {
-margin-top: 0;
-}
-
-.team {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 25px;
-}
-
-.team-member {
-  display: flex;
-  align-items: center;
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  gap: 20px;
-}
-
-.team-member img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
-  border: 4px solid #8b0000;
-}
-
-.team-member h3 {
+/* RESET */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  color: #222;
+  background: #f7f7f7;
+}
+
+/* NAVIGATION */
+.nav-overlay {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-overlay ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-overlay a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-overlay a:hover,
+.nav-overlay a.active {
+  border-color: white;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("assets/hero.jpg") center / cover no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  text-align: center;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+
+.hero-text p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* SEITENLAYOUT */
+header {
+  background: #8b0000;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+nav {
+  background: white;
+  padding: 15px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+nav a.active {
   color: #8b0000;
+  border-bottom: 2px solid #8b0000;
 }
 
-.team-member p {
-  margin: 5px 0 0;
-  font-size: 0.95rem;
+section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
-/* RESPONSIVE: auf kleinen Bildschirmen untereinander */
-@media (max-width: 600px) {
-  .team-member {
-    flex-direction: column;
-    text-align: center;
-  }
+h2 {
+  margin-bottom: 30px;
+  color: #8b0000;
+  text-align: center;
 }
-
-
-
-.contact {
-text-align: center;
-}
-
 
 footer {
-background-color: #333;
-color: white;
-text-align: center;
-padding: 20px;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
 }
